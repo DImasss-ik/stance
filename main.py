@@ -3,10 +3,10 @@ import psycopg2
 from flask import Flask, render_template, request, redirect, url_for
 import os
 con = psycopg2.connect(
-  database="postgres",
-  user="postgres",
-  password="0000",
-  host="127.0.0.1",
+  database="deg3mejm6ogkqb",
+  user="kzzmmyofisvjcy",
+  password="87b9060c983ba8aadd645124d94806c31954efa110382624a4adc3c0ecaabde4",
+  host="ec2-34-250-16-127.eu-west-1.compute.amazonaws.com",
   port="5432"
 )
 
