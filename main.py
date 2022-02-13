@@ -25,7 +25,7 @@ img3 = os.path.join(app.config['UPLOAD_FOLDER'], 'reg.jpg')
 
 @app.route('/')
 def index():
-    cur.execute("""SELECT * from BRAND,MODEL,AUTO,ADVERTISEMENT
+    cur.execute("""SELECT * from brand,model,auto,advertisement
                 WHERE BRAND.ID_OF_BRAND = MODEL.ID_OF_BRAND AND AUTO.ID_OF_MODEL = MODEL.ID_OF_MODEL AND AUTO.VIN_NUMBER_OF_AUTO = ADVERTISEMENT.VIN_NUMBER_OF_AUTO AND BRAND.NAME_OF_BRAND = 'AUDI';""")
     rowsa = cur.fetchall()
 
@@ -257,5 +257,4 @@ if __name__ == "__main__":
 
 
 
-con.commit()
-con.close()
+
