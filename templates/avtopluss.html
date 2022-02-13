@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление объявлениия</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/main.css')}}">
+</head>
+<body>
+<center>
+     <h1>Добавление объявлениия</h1>
+    <h3>Модель:{{rowss[0][0]}}</h3>
+    <h3>Модель:{{rows[0][4]}}</h3>
+    <h3>Тип топлива:{{rows[0][0]}}</h3>
+    <h3>Трансмиссия:{{rows[0][1]}}</h3>
+    <h3>Привод:{{rows[0][2]}}</h3>
+  <h3>Внесение информации об авто</h3>
+    <form action="#" method="post">
+        <h4>Вин номер: <input type="text" name="vin" placeholder="Enter VIN number"></h4>
+        <h4>Сумма штрафов: <input type="text" name="amount" placeholder="Enter of fines"></h4>
+        <h4>Цвет: <input type="text" name="col" placeholder="Enter colour"></h4>
+        <h4>Год выпуска: <input type="text" name="year" placeholder="Enter year of releaser"></h4>
+        <h4>Пробег: <input type="text" name="mile" placeholder="Enter mileage"></h4>
+        <h4>Госномер: <input type="text" name="state" placeholder="Enter state number"></h4>
+        <h4>Комментарий: <input type="text" name="comm" placeholder="Enter comment"></h4>
+        <input type="submit" value="Добавить данные">
+    </form>
+</center>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать объявление</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/main.css')}}">
+</head>
+<body>
+<center>
+    <h1>Редактировать объявление</h1>
+    <h3>{{vinn}}</h3>
+
+    <form action="#" method="post">
+        <h3>Госномер:<input type="text" name="num" placeholder="{{state}}"></h3>
+        <h3>Комментарий:<input type="text" name="com" placeholder="{{comm}}"></h3>
+        <h3>Сумма штрафов:<input type="text" name="amon" placeholder="{{amo}}"></h3>
+        <h3>Цвет:<input type="text" name="colo" placeholder="{{col}}"></h3>
+        <h3>Год выпуска:<input type="text" name="yea" placeholder="{{year}}"></h3>
+        <h3>Пробег:<input type="text" name="mile" placeholder="{{mileage}}"></h3>
+        <input type="submit" name="submit_1" value="Изменить">
+    </form>
+</center>
+
+</body>
+</html>

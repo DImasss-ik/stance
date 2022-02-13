@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/main.css')}}">
+</head>
+<body>
+
+    <h1>Автомобильный салон</h1>
+   <center>
+       <img src="{{image}}" width="500" height="800">
+       <h1>Личный кабинет</h1>
+    <a href="http://127.0.0.1:5000/Autorization">Вход в систему</a><br>
+   </center>
+
+    <h1>Авто в продаже</h1>
+    <h3>Ауди</h3>
+    <ul>
+        {% for r in rowsa %}
+         <table border="1" width="500" align="center" cellspacing="5" cellpadding="10">
+<tr><th>Марка</th><th>Модель</th><th>Тип топлива</th><th>Тип КПП</th><th>Привод</th><th>VIN номер</th><th>Наличие штрафов</th><th>Цвет</th><th>Год выпускаа</th><th>Пробег</th><th>Гос. номер</th><th>Комментарий владельца</th></tr>
+<tr><td>{{r[1]}}</td><td>{{r[6]}}</td><td>{{r[2]}}</td><td>{{r[3]}}</td><td>{{r[4]}}</td><td>{{r[8]}}</td><td>{{r[9]}}</td><td>{{r[10]}}</td><td>{{r[11]}}</td><td>{{r[12]}}</td><td>{{r[14]}}</td><td>{{r[15]}}</td></tr>
+</table>
+        {% endfor %}
+
+    </ul>
+
+
+    <h3>БМВ</h3>
+    <ul>
+        {% for r in rowsb %}
+        <table border="1" width="500" align="center" cellspacing="5" cellpadding="10">
+<tr><th>Марка</th><th>Модель</th><th>Тип топлива</th><th>Тип КПП</th><th>Привод</th><th>VIN номер</th><th>Наличие штрафов</th><th>Цвет</th><th>Год выпускаа</th><th>Пробег</th><th>Гос. номер</th><th>Комментарий владельца</th></tr>
+<tr><td>{{r[1]}}</td><td>{{r[6]}}</td><td>{{r[2]}}</td><td>{{r[3]}}</td><td>{{r[4]}}</td><td>{{r[8]}}</td><td>{{r[9]}}</td><td>{{r[10]}}</td><td>{{r[11]}}</td><td>{{r[12]}}</td><td>{{r[14]}}</td><td>{{r[15]}}</td></tr>
+</table>
+        {% endfor %}
+    </ul>
+
+    <h3>Мерседес</h3>
+    <ul>
+        {% for r in rowsm %}
+         <table border="1" width="500" align="center" cellspacing="5" cellpadding="10">
+<tr><th>Марка</th><th>Модель</th><th>Тип топлива</th><th>Тип КПП</th><th>Привод</th><th>VIN номер</th><th>Наличие штрафов</th><th>Цвет</th><th>Год выпускаа</th><th>Пробег</th><th>Гос. номер</th><th>Комментарий владельца</th></tr>
+<tr><td>{{r[1]}}</td><td>{{r[6]}}</td><td>{{r[2]}}</td><td>{{r[3]}}</td><td>{{r[4]}}</td><td>{{r[8]}}</td><td>{{r[9]}}</td><td>{{r[10]}}</td><td>{{r[11]}}</td><td>{{r[12]}}</td><td>{{r[14]}}</td><td>{{r[15]}}</td></tr>
+</table>
+        {% endfor %}
+    </ul>
+
+    <h3>Тойота</h3>
+    <ul>
+        {% for r in rowst %}
+         <table border="1" width="500" align="center" cellspacing="5" cellpadding="10">
+<tr><th>Марка</th><th>Модель</th><th>Тип топлива</th><th>Тип КПП</th><th>Привод</th><th>VIN номер</th><th>Наличие штрафов</th><th>Цвет</th><th>Год выпускаа</th><th>Пробег</th><th>Гос. номер</th><th>Комментарий владельца</th></tr>
+<tr><td>{{r[1]}}</td><td>{{r[6]}}</td><td>{{r[2]}}</td><td>{{r[3]}}</td><td>{{r[4]}}</td><td>{{r[8]}}</td><td>{{r[9]}}</td><td>{{r[10]}}</td><td>{{r[11]}}</td><td>{{r[12]}}</td><td>{{r[14]}}</td><td>{{r[15]}}</td></tr>
+</table>
+        {% endfor %}
+    </ul>
+
+    <h3>Ниссан</h3>
+    <ul>
+        {% for r in rowsn %}
+          <table border="1" width="500" align="center" cellspacing="5" cellpadding="10">
+<tr><th>Марка</th><th>Модель</th><th>Тип топлива</th><th>Тип КПП</th><th>Привод</th><th>VIN номер</th><th>Наличие штрафов</th><th>Цвет</th><th>Год выпускаа</th><th>Пробег</th><th>Гос. номер</th><th>Комментарий владельца</th></tr>
+<tr><td>{{r[1]}}</td><td>{{r[6]}}</td><td>{{r[2]}}</td><td>{{r[3]}}</td><td>{{r[4]}}</td><td>{{r[8]}}</td><td>{{r[9]}}</td><td>{{r[10]}}</td><td>{{r[11]}}</td><td>{{r[12]}}</td><td>{{r[14]}}</td><td>{{r[15]}}</td></tr>
+</table>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/main.css')}}">
+</head>
+<body>
+  <h1>Личный кабинет</h1>
+  <center>
+      <h1>Здравствуйте {{fio}}</h1>
+    <h3>Ваш ID = {{ident}}</h3>
+    <h3>Ваш телефон = {{tnumber}}</h3>
+    <h3>Место жительства = {{resid}}</h3>
+    <form action="#" method="post">
+        <h3>Изменить информацию</h3>
+        <select name="redact">
+            <option>Не выбрано</option>
+            <option>Изменить информацию о себе</option>
+            <option>Добавить объявление</option>
+            <option>Изменить существующее</option>
+        </select>
+        <input type="submit" name="submit_1" value="Изменить">
+    </form><br>
+      <h3>Ваши объявления</h3>
+    {% for r in rows %}
+        
+
+      <table border="1" width="500" align="center" cellspacing="5" cellpadding="10">
+<tr><th>VIN номер</th>><th>Цвет</th><th>Год выпускаа</th><th>Пробег</th><th>Гос. номер</th><th>Комментарий владельца</th><th>Просмотры</th></tr>
+<tr><td>{{r[0]}}</td><td>{{r[2]}}</td><td>{{r[3]}}</td><td>{{r[4]}}</td><td>{{r[6]}}</td><td>{{r[7]}}</td><td>{{r[9]}}</td></tr>
+</table>
+      {% endfor %}
+  </center>
+
+
+
+
+
+
+</body>
+</html>

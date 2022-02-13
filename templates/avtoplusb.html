@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление объявления</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/main.css')}}">
+</head>
+<body>
+<center>
+     <h1>Добавление объявления</h1>
+    <h3>Марка {{nambr}}</h3>
+    <h3>Модель</h3>
+
+
+
+
+    <form action="#" method="post">
+        <select name="model">
+            <option>Не выбрано</option>
+        {% for r in rows %}
+          <option>{{r[4]}}</option>
+        {% endfor %}
+    </select>
+          <input type="submit" name = "model" value="Выбрать модель">
+    </form>
+</center>
+
+</body>
+</html>
